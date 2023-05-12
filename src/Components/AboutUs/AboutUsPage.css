@@ -1,0 +1,160 @@
+section.section_aboout_us {
+  margin-top: -86px;
+  margin-bottom: 300px;
+}
+
+.about_us_main {
+  position: relative;
+  margin-top: -31px;
+  top: 194px;
+}
+
+.about_us_title {
+  line-height: 13px;
+}
+
+.about_us_title h1 {
+  font-size: 47px;
+  color: #0073a8;
+}
+
+.about_us_title p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.about_us_content h1 {
+  font-size: 50px;
+  color: #0073a8;
+}
+
+.about_us_content p {
+  text-align: justify;
+  font-size: 26px;
+}
+
+.main_about_us_content {
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.about_banner_image img {
+  top: 0;
+  height: 664px;
+  position: relative;
+  width: 100%;
+}
+
+.about_us_banner_text {
+  position: absolute;
+  margin-top: -182px;
+  font-size: 21px;
+  color: white;
+}
+
+.full_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right_content {
+  width: 50%;
+}
+
+.content_para p {
+  font-size: 22px;
+}
+
+section.about_us_Para {
+  margin-bottom: 40px;
+}
+
+.left_content {
+  width: 40%;
+}
+
+.travel_title h1 {
+  font-size: 66px;
+  text-align: center;
+  color: #0073a8;
+}
+
+.travel_title p {
+  font-size: 20px;
+  width: 40%;
+}
+
+.images_travelling {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pic_div img {
+  border-radius: 31px;
+  position: relative;
+  width: 56%;
+  height: 600px;
+}
+
+section.main_about_us_card {
+  margin-top: 100px;
+  margin-bottom: 277px;
+}
+
+.upper_img img {
+  border-radius: 27px;
+  position: absolute;
+  top: 2003px;
+  width: 25%;
+  right: 32%;
+  height: 58%;
+}
+
+.card_content_about_us {
+  position: absolute;
+  border-radius: 24px;
+  border: 1px solid;
+  left: 62%;
+  width: 24%;
+  background-color: lightblue;
+  padding: 23px;
+  top: 198%;
+}
+
+.card_content_about_us h1 {
+  color: #0073a8;
+  font-size: 35px;
+  text-align: center;
+}
+
+.card_content_about_us p {
+  text-align: justify;
+  font-size: 17px;
+}
+
+.button_about_us button {
+  border: 1px solid;
+  color: white;
+  font-size: 25px;
+  padding: 12px;
+  border-radius: 6px;
+  background: #0073a8;
+}
+
+.button_about_us button:hover {
+  background-color: white;
+  color: #0073a8;
+}
+
+.button_about_us {
+  text-align: center;
+}
+
+.about_us_pic_title h1 {
+  font-size: 45px;
+  font-weight: 800;
+  color: #0073a8;
+  text-align: center;
+}

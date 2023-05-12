@@ -1,0 +1,539 @@
+.banner_img img {
+  top: 0;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.left_text {
+  z-index: 2;
+  position: absolute;
+  top: 72%;
+  color: white;
+  display: flex;
+  left: 55%;
+}
+
+.right_text {
+  z-index: 2;
+  line-height: 27px;
+  position: absolute;
+  top: 80%;
+  color: white;
+  font-size: 20px;
+}
+
+.main_text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_title {
+  font-size: 21px;
+  padding: 0 24px;
+}
+
+.banner_img::after {
+  content: "";
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  height: 36.624%;
+}
+
+.banner_img::before {
+  bottom: -20px;
+  content: "";
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(179deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 47.291%;
+  z-index: 2;
+}
+
+section.booking_info {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.full_booking_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right_info {
+  width: 50%;
+}
+
+.right_info h1 {
+  font-size: 23px;
+}
+
+.right_info h3 {
+  color: hsl(199, 100%, 33%);
+  font-size: 20px;
+}
+
+.info_durability {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon_details {
+  margin-right: 30px;
+}
+
+.icon_details svg {
+  color: hsl(187, 85%, 43%);
+  font-size: 29px;
+  margin-bottom: -5px;
+  margin-right: 6px;
+}
+
+.icon_details p {
+  font-size: 20px;
+}
+
+/* .icons_info {
+  display: flex;
+  flex-wrap: wrap;
+} */
+.left_info {
+  padding-bottom: 1.5rem !important;
+}
+
+.card_div {
+  width: 426px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.6rem;
+}
+
+.main_card h1 {
+  font-size: 34px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.main_card h2 {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.main_card {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.full_icon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left_info button {
+  font-size: 33px;
+  margin: 18px;
+  border: 1px solid;
+  border-radius: 19px;
+  background: hsl(187, 85%, 43%);
+  padding: 9px;
+  color: white;
+}
+
+.left_info button:hover {
+  color: hsl(187, 85%, 43%);
+  background-color: white;
+}
+
+.right_card p {
+  font-size: 21px;
+  margin-left: 13px;
+  margin-right: 32px;
+}
+
+.left_card p {
+  font-size: 21px;
+}
+
+.alert_div h1 {
+  margin-top: 18px;
+  color: #0073a8;
+}
+.alert_div {
+  margin-top: 37px;
+  border: 1px solid;
+  width: 100%;
+  border-radius: 22px;
+  background-color: #deb2c6;
+  padding: 1px 24px;
+}
+
+.alert_div p {
+  color: red;
+}
+
+.about_info {
+  margin-top: 40px;
+}
+
+.about_info p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.about_info h1 {
+  font-size: 28px;
+  color: hsl(187, 85%, 43%);
+}
+
+.about_info button {
+  border: 1px solid;
+  color: white;
+  font-size: 30px;
+  padding: 12px;
+  border-radius: 16px;
+  background-color: hsl(187, 85%, 43%);
+}
+
+.about_info button:hover {
+  background-color: white;
+  color: hsl(187, 85%, 43%);
+}
+
+.about_info svg {
+  font-size: 37px;
+  margin-bottom: 4px;
+  margin-right: 8px;
+}
+
+.details_day img {
+  padding: 21px 0px;
+  border-bottom: 1px solid;
+  width: 35%;
+}
+
+.details_day {
+  margin-bottom: 50px;
+  border-left: 1px solid;
+  padding: 0px 40px;
+  position: relative;
+}
+
+.details_day :first-child {
+  color: hsl(199, 100%, 33%);
+  font-size: 19px;
+}
+
+.details_day p {
+  font-size: 22px;
+}
+
+.details_day h3 {
+  font-size: 26px;
+  color: hsl(187, 85%, 43%);
+}
+
+.details_day p:after {
+  border-radius: 18px;
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background: red;
+}
+
+.video {
+  gap: 11px;
+  display: flex;
+  overflow: auto;
+}
+
+.content_title {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.content_title p {
+  font-size: 26px;
+}
+
+.content_title h1 {
+  color: hsl(187, 85%, 43%);
+  font-size: 30px;
+}
+
+.main_video {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+section.video_content {
+  margin-bottom: 70px;
+}
+
+.video::-webkit-scrollbar {
+  margin-top: 20px;
+  height: 10px;
+  background: grey;
+}
+
+.section_image_content {
+  margin-bottom: 70px;
+}
+
+.image_content_title {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.image_content_title p {
+  font-size: 26px;
+}
+
+.image_content_title h1 {
+  color: hsl(187, 85%, 43%);
+  font-size: 30px;
+}
+
+.journey_pic {
+  gap: 11px;
+  display: flex;
+  overflow: auto;
+}
+
+.main_image {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.main_image img {
+  width: 400px;
+  height: 100%;
+}
+
+.journey_pic::-webkit-scrollbar {
+  margin-top: 20px;
+  height: 10px;
+  background: grey;
+}
+
+.all_button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.button_condition svg {
+  margin: -5px 14px;
+}
+
+.button_condition button {
+  font-weight: 500;
+  cursor: pointer;
+  background: white;
+  font-size: 27px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+p.model_how_to_reach_para {
+  font-weight: 500;
+  font-size: 19px;
+}
+
+p.title_para {
+  color: #0073a8;
+}
+
+.item_rent {
+  padding: 0.75rem;
+  border-top: 1px solid #e3e3e3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.disclamber p {
+  font-size: 18px;
+  margin-top: 29px;
+  color: #9f9696;
+}
+
+.last_disclamber p {
+  font-size: 18px;
+  margin-top: 29px;
+  color: #9f9696;
+}
+
+.cancel_line p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cancel_line h3 {
+  font-size: 31px;
+  font-weight: 600;
+  color: grey;
+}
+
+.after_cancel p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cancel_table ul li {
+  list-style: revert;
+  font-size: 20px;
+  font-family: fangsong;
+  font-weight: 400;
+}
+
+.booking_event h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: grey;
+}
+
+.second_table ul li {
+  text-align: justify;
+  list-style: devanagari;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.booking_header_3 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: grey;
+}
+
+.booking_header_3 p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+ul.second_table_booking li {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 18px;
+  list-style: disc;
+}
+
+.booking_header_3 ul li {
+  list-style: decimal;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: justify;
+}
+
+.term_condition_title h2 {
+  color: #717171 !important;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.term_condition_title p {
+  font-size: 17px;
+  font-weight: 200;
+  margin-top: 21px;
+}
+
+.term_condition_2 h2 {
+  color: grey;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.term_condition_2 p {
+  font-size: 17px;
+  font-weight: 200;
+  margin-top: 21px;
+}
+
+.term_condition_note p {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.term_condition_note b {
+  color: #717171 !important;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Mandatory_Requirements_title h2 {
+  color: grey;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.Mandatory_Requirements_title ul li {
+  margin-bottom: 3px;
+  font-size: 22px;
+}
+
+.Mandatory_Requirements_title ul li a {
+  color: #0073a8;
+}
+
+.inclusion_para p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.inclusion_table h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #6c6868;
+}
+
+.inclusion_table ul li {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.inclusion_note b {
+  font-size: 20px;
+}
+
+.inclusion_note p {
+  text-align: justify;
+}
+
+.reach_city {
+  display: flex;
+}

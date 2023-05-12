@@ -1,0 +1,295 @@
+.banner_pic img {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.text_banner_image {
+  z-index: 2;
+  position: absolute;
+  top: 62%;
+}
+
+.text_banner_image h1 {
+  font-size: 55px;
+  color: white;
+  font-weight: 500;
+}
+
+.text_banner_image h2 {
+  font-size: 44px;
+  color: white;
+  font-weight: 500;
+}
+
+.banner_pic::after {
+  content: "";
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  height: 59.624%;
+}
+
+.banner_pic::before {
+  content: "";
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 49.291%;
+  z-index: 1;
+  top: 47%;
+}
+
+.main_about_us {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+section.main_about_us_section {
+  margin-bottom: 100px;
+}
+
+.left_about_us {
+  height: auto;
+  width: 40%;
+}
+
+.about_us_text p {
+  font-size: 18px;
+  color: #10b5cb;
+  font-weight: 500;
+}
+
+.left_image img {
+  height: 349px;
+  width: 599px;
+}
+
+.right_about_us {
+  width: 45%;
+}
+
+.about_us_text h1 {
+  color: #0073a8;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+section.special_offer_section {
+  margin-bottom: 100px;
+}
+
+.experience_text p {
+  font-size: 17px;
+  text-align: justify;
+  font-weight: 500;
+  margin-top: 33px;
+  color: grey;
+}
+
+.all_icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.all_icon svg {
+  font-size: 35px;
+  color: hsl(199, 100%, 33%);
+}
+
+.all_icon h1 {
+  font-size: 22px;
+  line-height: 2;
+}
+
+.experience {
+  position: relative;
+  height: 116px;
+  border: 9px solid #0073a8;
+  width: 35%;
+  background: #10b5cb;
+  left: 65%;
+  bottom: 115px;
+}
+
+.experience h1 {
+  margin-top: 12px;
+  font-size: 29px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.experience p {
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+}
+
+.special_offer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left_side_offer {
+  text-align: justify;
+  width: 54%;
+}
+
+.left_side_offer h1 {
+  margin-bottom: 30px;
+  color: #0073a8;
+  font-size: 29px;
+}
+
+.left_side_offer p {
+  text-align: justify;
+  font-size: 19px;
+  font-weight: 400;
+  color: grey;
+}
+
+.right_side_offer {
+  left: 13px;
+  width: 426px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.6rem;
+  height: 12%;
+  padding: 7px 26px;
+}
+
+.intrcution h1 {
+  color: grey;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.icon_safety svg {
+  margin-right: 21px;
+  font-size: 30px;
+  color: #0073ae;
+}
+
+.icon_safety p {
+  margin-left: 6px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.all_details {
+  margin-top: 100px;
+  display: flex;
+}
+
+.left_details svg {
+  font-size: 47px;
+  color: #0073a8;
+}
+
+.left_details {
+  width: 100%;
+  margin-right: 58px;
+}
+
+.img_tour img {
+  width: 208%;
+  height: auto;
+}
+
+.left_image {
+  margin-top: 40px;
+}
+
+.title_activity {
+  text-align: center;
+}
+
+.title_activity h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #0073a8;
+}
+
+.title_activity p {
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+}
+
+.activiti_places img {
+  width: 88%;
+  height: auto;
+}
+
+.activity_content {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.all_activity {
+  margin-top: 60px;
+}
+
+section.activity_section {
+  margin-bottom: 100px;
+}
+
+.tracking_info h1 {
+  font-size: 24px;
+}
+
+.tracking_info button {
+  margin-top: 12px;
+  color: white;
+  border: 1px solid #10b5cb;
+  font-size: 20px;
+  border-radius: 10px;
+  background: #10b5cb;
+  padding: 7px 11px;
+}
+
+.tracking_info button:hover {
+  color: #10b5cb;
+  background: white;
+}
+
+.number_activity {
+  text-align: center;
+  font-size: 27px;
+  position: relative;
+  bottom: 95%;
+  left: 78%;
+  border: 1px solid;
+  width: 20%;
+  border-radius: 26px;
+  background: black;
+  color: white;
+}
+
+.number_activity:hover {
+  background: white;
+  color: #0073a8;
+}
+
+.activiti_places:hover {
+  color: #0073a8;
+}
+
+.tracking_info {
+  margin-top: 18px;
+}

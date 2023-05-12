@@ -1,0 +1,720 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+} */
+
+
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1c1c1c;
+  text-align: left;
+  background-color: #fff;
+}
+
+/* Color And Styling */
+
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyColor: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  padding: 13px 29px;
+  background: var(--SecondaryColor);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: var(--SecondaryColor);
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font-size: 100%;
+}
+
+body {
+  background: var(--bodyColor);
+}
+
+/* This is common css for apply all common element */
+
+/* Navbar CSS  */
+
+:root {
+  --PrimaryColor: #0073a8;
+  --SecondaryColor: #10b5cb;
+  --gradientColor: linear(to right, #10b5cb, #0073a8);
+  --whiteColor: #fff;
+  --blackColor: #1b2d36;
+  --textColor: #58585f;
+  --whiteColorDeam: #ededed;
+  --greyColor: #fff;
+  --inputColor: #fff;
+  --bodyColor: #fff;
+  --cardBG: #fff;
+}
+
+.header {
+  padding: 3rem 8.5rem;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--whiteColorDeam);
+  width: 100%;
+  padding: 3rem 8.5rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+}
+/* .header .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+} */
+
+.header .logo {
+  font-size: 20px;
+  color: var(--blackColor);
+  cursor: pointer;
+}
+
+.logoDiv svg {
+  height: auto;
+  width: 58px;
+}
+
+.logoDiv {
+  margin-right: 32px;
+}
+
+.header .logo .icon {
+  /* font-size: 25px; */
+  color: var(--PrimaryColor);
+  /* transform: translateY(5px); */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .header .navBar {
+    position: absolute;
+    background: var(--whiteColorDeam);
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: -500rem;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+    transition: 0.3s ease-in-out;
+  }
+  .header .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+  .header .navBar .navLists .btn {
+    margin-top: 1rem;
+  }
+  .header .navBar .navLists .btn a {
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+  .header .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--PrimaryColor);
+  }
+  .header .navBar .closeNavbar:hover {
+    color: var(--SecondaryColor);
+  }
+  .header .activeNavbar {
+    top: 7rem;
+  }
+}
+
+.header .toggleNavbar .icon {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+}
+.header .toggleNavbar:hover.icon {
+  color: var(--SecondaryColor);
+}
+
+/* Main CSS  */
+
+:root {
+  --PrimaryColor: #0073a8;
+  --SecondaryColor: #10b5cb;
+  --gradientColor: linear(to right, #10b5cb, #0073a8);
+  --whiteColor: #fff;
+  --blackColor: #1b2d36;
+  --textColor: #58585f;
+  --whiteColorDeam: #ededed;
+  --greyColor: #bebebe;
+  --inputColor: #efefef;
+  --bodyColor: #f0f0f6;
+  --cardBG: #e1e1eb;
+  --cardHover: #fff;
+}
+.main {
+  width: 100%;
+}
+.main .secTitle .title {
+  color: var(--textColor);
+  margin: 1rem 0;
+  z-index: 2;
+}
+.main .secTitle .title::after {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+}
+.main .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main .secContent .singleDestination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background-color: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+}
+.main .secContent .singleDestination:hover {
+  background: var(--cardHover);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.main .secContent .singleDestination .imageDiv {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .secContent .singleDestination .imageDiv img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 2s ease;
+}
+.main .secContent .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.main .secContent .singleDestination .cardInfo {
+  padding: 1rem;
+}
+.main .secContent .singleDestination .cardInfo .desttitle {
+  color: var(--blackColor);
+  font-size: 1.25rem;
+}
+.main .secContent .singleDestination .cardInfo .continent {
+  gap: 0.5rem;
+}
+.main .secContent .singleDestination .cardInfo .continent .icon {
+  color: var(--textColor);
+  font-size: 18px;
+}
+.main .secContent .singleDestination .cardInfo .continent .name {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 14px;
+}
+.main .secContent .singleDestination .cardInfo .fees {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  border-top: 1.5px solid var(--greyColor);
+  border-bottom: 1.5px solid var(--greyColor);
+}
+.main .secContent .singleDestination .cardInfo .fees .grade {
+  color: var(--textColor);
+  max-width: 100px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .secContent .singleDestination .cardInfo .fees .grade small {
+  text-align: center;
+  background: var(--gradientColor);
+  border-radius: 1rem;
+  color: var(--whiteColor);
+  padding: 1px 10px;
+  font-size: 10px;
+}
+.main .secContent .singleDestination .cardInfo .fees .price {
+  font-size: 2rem;
+  color: var(--blackColor);
+}
+.main .secContent .singleDestination .cardInfo .desc {
+  font-size: 13.5px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.main .secContent .singleDestination .cardInfo .btn {
+  margin-top: 1rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.main .secContent .singleDestination .cardInfo .btn .icon {
+  align-self: center;
+  font-size: 18px;
+}
+
+.secTitle {
+  margin-top: 773px;
+}
+
+/* Home CSS */
+:root {
+  --PrimaryColor: #0073a8;
+  --SecondaryColor: #10b5cb;
+  --gradientColor: linear(to right, #10b5cb, #0073a8);
+  --whiteColor: #fff;
+  --blackColor: #1b2d36;
+  --textColor: #58585f;
+  --whiteColorDeam: #ededed;
+  --greyColor: #fff;
+  --inputColor: #fff;
+  --bodyColor: #fff;
+  --cardBG: #fff;
+}
+.home {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.home .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #2f6a7f;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
+.home video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+.home .homeContent {
+  width: 100%;
+  height: max-content;
+  padding: 8rem 1.5rem 3rem;
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: auto;
+  color: var(--whiteColor);
+  z-index: 100;
+}
+.home .homeContent .textDiv {
+  padding: 2rem 0;
+}
+.home .homeContent .textDiv .smallText {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.home .homeContent .textDiv .homeTitle {
+  position: relative;
+  font-size: 1.8rem;
+}
+.home .homeContent .cardDiv {
+  position: relative;
+  padding: 2rem 1rem;
+  background: var(--whiteColor);
+  border-radius: 10px;
+  gap: 1rem;
+}
+.home .homeContent .cardDiv lable {
+  display: block;
+  color: var(--textColor);
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.home .homeContent .cardDiv .label_total {
+  justify-content: space-between;
+  align-items: center;
+}
+.home .homeContent .cardDiv .label_total .total {
+  color: var(--textColor);
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.home .homeContent .cardDiv .input {
+  height: 40px;
+  padding: 0 1rem;
+  background-color: var(--inputColor);
+  border-radius: 3rem;
+}
+.home .homeContent .cardDiv .input input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+}
+.home .homeContent .cardDiv .input input::placeholder {
+  font-size: 13px;
+}
+.home .homeContent .cardDiv .input .icon {
+  font-size: 18px;
+  color: var(--PrimaryColor) !important;
+  margin-left: 10px;
+}
+.home .homeContent .cardDiv .input .input[type="range"] {
+  background: blue;
+}
+.home .homeContent .cardDiv .searchOptions {
+  position: absolute;
+  background: var(--SecondaryColor);
+  width: max-content;
+  bottom: -0.7rem;
+  column-gap: 0.8rem;
+  padding: 5px 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: center;
+  cursor: pointer;
+}
+
+.home .homeContent .cardDiv .searchOptions .icon {
+  font-size: 18px;
+}
+.home .homeContent .cardDiv .searchOptions span {
+  font-size: 13px;
+}
+.home .homeContent .homeFootericons {
+  width: 100%;
+  justify-content: space-between;
+}
+.home .homeContent .homeFootericons .icon {
+  font-size: 20px;
+  margin: 0 5px;
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.home .homeContent .homeFootericons .icon:hover {
+  color: var(--PrimaryColor);
+}
+
+.homeFooterIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer CSS */
+
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+video {
+  height: 100%;
+  object-fit: cover;
+}
+
+video::after {
+  content: "";
+  position: absolute;
+  background: rgba(10, 84, 107, 0.307);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+}
+
+.secContent {
+  width: 100%;
+  height: max-content;
+  padding: 2rem initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  row-gap: 2rem;
+  z-index: 100;
+}
+
+.contactDiv {
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.text small {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--whiteColor);
+}
+
+.text h2 {
+  color: var(--whiteColor);
+  font-size: 1.8rem;
+}
+
+.inputDiv {
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+}
+.inputDiv input {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border-radius: 3rem;
+  border: 1px solis var(--whiteColor);
+  outline: none;
+  background: transparent;
+  color: var(--whiteColor);
+}
+.inputDiv input::placeholder {
+  color: var(--whiteColor);
+  opacity: 0.5;
+}
+.inputDiv .btn {
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+  font-weight: 500;
+  gap: 0.5rem;
+}
+.inputDiv .icon {
+  font-size: 18px;
+}
+
+.footerCard {
+  position: relative;
+  padding: 1rem 1rem 4rem;
+  gap: 2rem;
+  border-radius: 1rem;
+  background: var(--bodyColor);
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.footerIntro {
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.footerParagraph {
+  font-size: 13px;
+  color: var(--textColor);
+}
+
+.footerSocials {
+  column-gap: 0.5rem;
+}
+
+.footerSocials .icon {
+  color: var(--blackColor);
+  font-size: 20px;
+}
+
+.icon:hover {
+  color: var(--PrimaryColor);
+}
+
+.footerLinks {
+  flex-basis: 50%;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+.footerLinks .linkGroup .groupTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--blackColor);
+  margin-bottom: 0.5rem;
+}
+.footerLinks .linkGroup .footerList {
+  font-size: 15px;
+  color: var(--textColor);
+  transition: 0.3s ease-in-out;
+}
+.footerLinks .linkGroup .footerList .icon {
+  font-size: 15px;
+  color: var(--greyColor);
+}
+.footerLinks .linkGroup .footerList:hover {
+  color: var(--PrimaryColor);
+  transform: translateX(7px);
+}
+.footerLinks .linkGroup .footerList:hover .icon {
+  color: var(--SecondaryColor);
+}
+.footerLinks .footerDiv {
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--SecondaryColor);
+  padding: 5rem 2rem;
+}
+
+.inputDiv.flex input {
+  border: 1px solid;
+}
+
+.footerDiv {
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--SecondaryColor);
+  padding: 0.5rem 2rem;
+}
+
+.footerDiv small {
+  font-size: 10px;
+  color: var(--whiteColor);
+}
+
+/* Media CSS */
+
+@media screen and (min-width: 1240px) {
+  .container {
+    width: 80% !important;
+    margin: auto !important;
+  }
+
+  .section {
+    padding: 6rem 0 4rem;
+  }
+}
