@@ -94,11 +94,12 @@ section.about_us_Para {
 .pic_div img {
   border-radius: 31px;
   position: relative;
-  width: 56%;
-  height: 600px;
+  width: 59%;
+  height: auto;
 }
 
 section.main_about_us_card {
+  position: relative;
   margin-top: 100px;
   margin-bottom: 277px;
 }
@@ -106,21 +107,20 @@ section.main_about_us_card {
 .upper_img img {
   border-radius: 27px;
   position: absolute;
-  top: 2003px;
-  width: 25%;
-  right: 32%;
-  height: 58%;
+  top: 40%;
+  width: 24%;
+  right: 34%;
+  height: 89%;
 }
 
 .card_content_about_us {
   position: absolute;
   border-radius: 24px;
-  border: 1px solid;
-  left: 62%;
+  left: 63%;
   width: 24%;
   background-color: lightblue;
-  padding: 23px;
-  top: 198%;
+  padding: 31px;
+  top: 0;
 }
 
 .card_content_about_us h1 {
@@ -131,16 +131,16 @@ section.main_about_us_card {
 
 .card_content_about_us p {
   text-align: justify;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .button_about_us button {
-  border: 1px solid;
-  color: white;
+  border: 1px solid #0073a8;
   font-size: 25px;
-  padding: 12px;
+  padding: 4px 13px;
   border-radius: 6px;
   background: #0073a8;
+  color: white;
 }
 
 .button_about_us button:hover {

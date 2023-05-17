@@ -3,7 +3,8 @@ import "../Navbar/navbar.css";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Navbar = () => {
   const [active, setActive] = useState("navbar");
@@ -21,26 +22,59 @@ const Navbar = () => {
 
   return (
     <section className="navBarSection">
-      <header className="header flex">
+      <header className="header flex"  >
         <div className="logoDiv">
           <NavLink to="#" className="logo flex">
             <h1>
-              <MdOutlineTravelExplore className="icon" /> Asgard
+            <Link  to="/" className="icon" > <MdOutlineTravelExplore /> <span className="text-black"> Asgard </span> </Link>
             </h1>
           </NavLink>
         </div>
 
-        <div className={active}>
+        <div className={active} style={{height: "60px"}} >
           <ul className="navLists flex">
             <li className="navItem">
-              <NavLink to="home" className="navLink">
+              <NavLink to="/" className="navLink">
                 Home
               </NavLink>
             </li>
-            <li className="navItem">
+            {/* <li className="navItem">
               <NavLink to="packages" className="navLink">
                 Packages
               </NavLink>
+            </li> */}
+            <li class="dropdown">
+              <NavLink
+                class="dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                // to="packages"
+                aria-expanded="false"
+              >
+                Packages <IoMdArrowDropdown />
+              </NavLink>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/domestic">
+                    Domestic Tour
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="international">
+                    International Tour
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Honeymoon">
+                    Honeymoon Tour
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Wedding">
+                    Wedding Tours
+                  </a>
+                </li>
+              </ul>
             </li>
             <li className="navItem">
               <NavLink to="about" className="navLink">
@@ -53,7 +87,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <button className="btn">
+            <button className="navbar_btn">
               <NavLink to="/booknow"> Book Now</NavLink>
             </button>
           </ul>

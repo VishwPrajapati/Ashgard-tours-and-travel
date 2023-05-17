@@ -12,6 +12,21 @@
   --cardBG: #fff;
 }
 
+.contact_information p {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact_information h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+.contact_information h6:hover {
+  color: hsl(199, 100%, 33%);
+}
+
 .footer {
   width: 100%;
   position: relative;
@@ -144,6 +159,14 @@
 .footer .secContent .footerCard .footerSocials .icon:hover {
   color: var(--PrimaryColor);
 }
+.footer .secContent .footerCard button.send_button {
+  background: #10b5cb;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+}
 .footer .secContent .footerCard .footerLinks {
   flex-basis: 50%;
   width: 100%;
@@ -152,6 +175,7 @@
   justify-content: space-between;
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .groupTitle {
+  font-size: 19px;
   display: block;
   font-weight: 600;
   color: var(--blackColor);
@@ -189,6 +213,14 @@
 }
 
 @media screen and (min-width: 500px) {
+  button.send_button {
+    background: #10b5cb;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+  }
   .footer .secContent .footerCard .footerLinks {
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 1rem;
@@ -198,11 +230,19 @@
     flex-direction: row;
   }
   .footer .secContent .footerCard .footerDiv small {
-    font-size: 14px;
+    font-size: 18px;
     color: var(--whiteColor);
   }
 }
 @media screen and (min-width: 660px) {
+  button.send_button {
+    background: #10b5cb;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+  }
   .footer .secContent .contactDiv {
     flex-direction: row;
     justify-content: space-between;
@@ -234,6 +274,14 @@
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 1rem;
   }
+  button.send_button {
+    background: #10b5cb;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+  }
 }
 @media screen and (min-width: 1024px) {
   .footer .secContent .footerCard {
@@ -254,10 +302,19 @@
   .footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
     color: var(--PrimaryColor);
   }
+  .footer .secContent .footerCard button.send_button {
+    background: #10b5cb;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+  }
   .footer .secContent .footerCard .footerLinks .linkGroup .footerList {
-    font-size: 24px;
+    font-size: 21px;
     padding: 5px 0;
     font-weight: 400;
     font-family: auto;
+    margin: 10px -22px;
   }
 }/*# sourceMappingURL=Footer.css.map */

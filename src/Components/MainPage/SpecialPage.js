@@ -27,7 +27,7 @@ export default function SpecialPage() {
                   perennial and seasonal rivers to support them. The diversified
                   cultures also form the colorful side of the land.
                 </p>
-                <div className="tours_details">
+                <div className="tours_details tour_width">
                   <div className="all_details">
                     <div className="left_details">
                       <h1>
@@ -69,10 +69,10 @@ export default function SpecialPage() {
                       <HiReceiptRefund /> Refund Policy / Cancellation Policy
                     </p>
                     <p>
-                      <MdOutlineSecurity /> Safety & Security /
+                      <MdOutlineSecurity /> Safety & Security
                     </p>
                     <p>
-                      <BiTimeFive /> 24*7 Support / Quick Booking/
+                      <BiTimeFive /> 24*7 Support / Quick Booking
                     </p>
                   </div>
                 </div>

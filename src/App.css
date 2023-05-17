@@ -8,8 +8,6 @@
   font-family: "Poppins", sans-serif;
 } */
 
-
-
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -72,7 +70,7 @@ li {
 }
 
 .btn {
-  padding: 13px 29px;
+  padding: 9px 25px;
   background: var(--SecondaryColor);
   border-radius: 6px;
   border: none;
@@ -86,9 +84,7 @@ li {
   font-weight: 500;
 }
 
-.btn:hover {
-  background-color: var(--SecondaryColor);
-}
+
 
 img,
 video {
@@ -153,15 +149,15 @@ body {
 
 .logoDiv svg {
   height: auto;
-  width: 58px;
+  width: 44px;
 }
 
 .logoDiv {
-  margin-right: 32px;
+  margin-right: 356px;
 }
 
 .header .logo .icon {
-  /* font-size: 25px; */
+  font-size: 36px;
   color: var(--PrimaryColor);
   /* transform: translateY(5px); */
 }
@@ -361,9 +357,9 @@ body {
   font-size: 18px;
 }
 
-.secTitle {
+/* .secTitle {
   margin-top: 773px;
-}
+} */
 
 /* Home CSS */
 :root {

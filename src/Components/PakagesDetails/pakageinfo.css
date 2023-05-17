@@ -47,7 +47,7 @@
 }
 
 .banner_img::before {
-  bottom: -20px;
+  bottom: 0px;
   content: "";
   position: absolute;
   margin: 0;
@@ -56,8 +56,9 @@
   width: 100%;
   background: linear-gradient(179deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
   transform: matrix(1, 0, 0, -1, 0, 0);
-  height: 47.291%;
+  height: 41.291%;
   z-index: 2;
+  top: 469px;
 }
 
 section.booking_info {

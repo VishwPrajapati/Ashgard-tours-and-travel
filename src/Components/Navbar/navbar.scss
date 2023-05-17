@@ -25,6 +25,23 @@
     box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
 
     @media screen and (max-width: 768px){
+
+
+
+        button.navbar_btn {
+            border: none;
+            a {
+                background: #10b5cb;
+                padding: 5px 6px;
+                border-radius: 6px;
+                border: 1px solid #10b5cb;
+                color: white;
+                font-size: 21px;
+                font-weight: 500;
+            }
+        }
+
+
         .Navbar{
             position: absolute;
             background: var(--whiteColorDeam);
@@ -59,13 +76,16 @@
                         }
                     }
                 }
-                .btn{
-                    margin-top: 1rem;
-
-                    a{
-                        font-weight: 600;
-                        color: var(--whiteColor);
-                        
+                button.navbar_btn {
+                    border: none;
+                    a {
+                        background: #10b5cb;
+                        padding: 5px 6px;
+                        border-radius: 6px;
+                        border: 1px solid #10b5cb;
+                        color: white;
+                        font-size: 21px;
+                        font-weight: 500;
                     }
                 }
             }
@@ -138,12 +158,18 @@
                     }
                 }
 
-                .btn{
-                     margin-left: 1rem;
-                     a{
-                        color: var(--whiteColor);
-                        font-weight: 700;
-                     }   
+                
+                button.navbar_btn {
+                    border: none;
+                    a {
+                        background: #10b5cb;
+                        padding: 5px 6px;
+                        border-radius: 6px;
+                        border: 1px solid #10b5cb;
+                        color: white;
+                        font-size: 21px;
+                        font-weight: 500;
+                    }
                 }
             }
         }
@@ -162,8 +188,43 @@
     }
   }
 
+  button.navbar_btn {
+    border: none;
+    a {
+        background: #10b5cb;
+        padding: 5px 6px;
+        border-radius: 6px;
+        border: 1px solid #10b5cb;
+        color: white;
+        font-size: 21px;
+        font-weight: 500;
+    }
+}
+
+
+  li.dropdown a {
+    color: var(--textColor);
+    padding: 0 12px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+
   @media screen and (min-width: 1240px) {
     .header {
         padding: 0px 0px;
+    }
+
+    button.navbar_btn {
+        border: none;
+        a {
+            background: #10b5cb;
+            padding: 5px 6px;
+            border-radius: 6px;
+            border: 1px solid #10b5cb;
+            color: white;
+            font-size: 21px;
+            font-weight: 500;
+        }
     }
   }

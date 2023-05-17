@@ -1,8 +1,43 @@
 import React from "react";
-import img from "../../images/activity-1.jpg";
-import img2 from "../../images/activity-2.jpg";
-import img3 from "../../images/activity-3.jpg";
-import img4 from "../../images/activity-4.jpg";
+import img from "../../images/traking_1.jpg";
+import img2 from "../../images/tent_1.jpg";
+import img3 from "../../images/paraglinding.jpg";
+import img4 from "../../images/moterbike_tour.jpg";
+import img5 from "../../images/scooba_diving.jpg";
+import img6 from "../../images/skydiving_3.jpg";
+
+const Data = [
+  {
+    imgsrc: img,
+    title: "Trekking Tours",
+    button: "View Details",
+  },
+  {
+    imgsrc: img2,
+    title: "Camping Tours",
+    button: "View Details",
+  },
+  {
+    imgsrc: img3,
+    title: "Paragliding Tours",
+    button: "View Details",
+  },
+  {
+    imgsrc: img4,
+    title: "Motorbike Tours",
+    button: "View Details",
+  },
+  {
+    imgsrc: img5,
+    title: "Scuba Diving",
+    button: "View Details",
+  },
+  {
+    imgsrc: img6,
+    title: "skydiving",
+    button: "View Details",
+  },
+];
 
 export default function ActivityPage() {
   return (
@@ -19,46 +54,19 @@ export default function ActivityPage() {
           </div>
           <div className="all_activity">
             <div className="activity_content">
-              <div className="activiti_places">
-                <div className="image_activity">
-                  <img src={img} alt="image" />
-                </div>
-                <div className="tracking_info">
-                  <h1>Trekking Tours</h1>
-                  <button>View Details</button>
-                </div>
-                <div className="number_activity">01</div>
-              </div>
-              <div className="activiti_places">
-                <div className="image_activity">
-                  <img src={img2} alt="image" />
-                </div>
-                <div className="tracking_info">
-                  <h1>Camping Tours</h1>
-                  <button>View Details</button>
-                </div>
-                <div className="number_activity">02</div>
-              </div>
-              <div className="activiti_places">
-                <div className="image_activity">
-                  <img src={img3} alt="image" />
-                </div>
-                <div className="tracking_info">
-                  <h1>Paragliding Tours</h1>
-                  <button>View Details</button>
-                </div>
-                <div className="number_activity">03</div>
-              </div>
-              <div className="activiti_places">
-                <div className="image_activity">
-                  <img src={img4} alt="image" />
-                </div>
-                <div className="tracking_info">
-                  <h1>Motorbike Tours</h1>
-                  <button>View Details</button>
-                </div>
-                <div className="number_activity">04</div>
-              </div>
+              {Data.map((data) => {
+                return (
+                  <div className="activiti_places">
+                    <div className="image_activity">
+                      <img src={data.imgsrc} alt="image" />
+                    </div>
+                    <div className="tracking_info">
+                      <h1>{data.title}</h1>
+                      <button>{data.button}</button>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

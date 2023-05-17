@@ -5,7 +5,7 @@ import Main from "../Main/Main";
 export default function BookNow() {
   return (
     <>
-      <Home />
+      <Home /> 
       <Main />
     </>
   );

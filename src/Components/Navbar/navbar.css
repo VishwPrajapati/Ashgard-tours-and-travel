@@ -24,6 +24,18 @@
   box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
 }
 @media screen and (max-width: 768px) {
+  .header button.navbar_btn {
+    border: none;
+  }
+  .header button.navbar_btn a {
+    background: #10b5cb;
+    padding: 5px 6px;
+    border-radius: 6px;
+    border: 1px solid #10b5cb;
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
+  }
   .header .Navbar {
     position: absolute;
     background: var(--whiteColorDeam);
@@ -57,12 +69,17 @@
   .header .Navbar .navLists .navItem .navLink:hover {
     color: var(--PrimaryColor);
   }
-  .header .Navbar .navLists .btn {
-    margin-top: 1rem;
+  .header .Navbar .navLists button.navbar_btn {
+    border: none;
   }
-  .header .Navbar .navLists .btn a {
-    font-weight: 600;
-    color: var(--whiteColor);
+  .header .Navbar .navLists button.navbar_btn a {
+    background: #10b5cb;
+    padding: 5px 6px;
+    border-radius: 6px;
+    border: 1px solid #10b5cb;
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
   }
   .header .Navbar .closeNavbar {
     position: absolute;
@@ -116,12 +133,17 @@
   .header .navbar .navLists .navItem .navLink:hover {
     color: var(--PrimaryColor);
   }
-  .header .navbar .navLists .btn {
-    margin-left: 1rem;
+  .header .navbar .navLists button.navbar_btn {
+    border: none;
   }
-  .header .navbar .navLists .btn a {
-    color: var(--whiteColor);
-    font-weight: 700;
+  .header .navbar .navLists button.navbar_btn a {
+    background: #10b5cb;
+    padding: 5px 6px;
+    border-radius: 6px;
+    border: 1px solid #10b5cb;
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
   }
 }
 @media screen and (min-width: 960px) {
@@ -129,8 +151,40 @@
     padding: 0 0.7rem;
   }
 }
+button.navbar_btn {
+  border: none;
+}
+button.navbar_btn a {
+  background: #10b5cb;
+  padding: 5px 6px;
+  border-radius: 6px;
+  border: 1px solid #10b5cb;
+  color: white;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+li.dropdown a {
+  color: var(--textColor);
+  padding: 0 12px;
+  font-size: 23px;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 1240px) {
   .header {
     padding: 0px 0px;
+  }
+  button.navbar_btn {
+    border: none;
+  }
+  button.navbar_btn a {
+    background: #10b5cb;
+    padding: 5px 6px;
+    border-radius: 6px;
+    border: 1px solid #10b5cb;
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
   }
 }/*# sourceMappingURL=navbar.css.map */

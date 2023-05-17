@@ -112,7 +112,7 @@ const Data = [
 
 const Main = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
   const navigate = useNavigate();
 
@@ -127,7 +127,7 @@ const Main = () => {
         </h3>
       </div>
 
-      <div className="secContent grid">
+      <div className="secContent">
         {Data.map(
           ({ id, imgSrc, destTitle, location, grade, fees, description }) => {
             return (
@@ -145,10 +145,7 @@ const Main = () => {
 
                   <div className="fees flex">
                     <div className="grade">
-                      <span>
-                        {grade}
-                        <small>+1</small>
-                      </span>
+                      <span>{grade}</span>
                     </div>
                     <div className="price">
                       <h5>{fees}</h5>
@@ -159,15 +156,16 @@ const Main = () => {
                     <p>{description}</p>
                   </div>
 
-                  <button
-                    className="btn flex"
-                    onClick={() => {
-                      navigate("/pakageinfo");
-                    }}
-                  >
-                    DETAILS
-                    <HiOutlineClipboardCheck className="icon" />
-                  </button>
+                  <div className="button_booking">
+                    <button
+                      className="button_card flex"
+                      onClick={() => {
+                        navigate("/pakageinfo");
+                      }}
+                    >
+                      DETAILS
+                    </button>
+                  </div>
                 </div>
               </div>
             );

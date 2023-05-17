@@ -18,16 +18,16 @@ export default function ContactUsContent() {
                 <p>Office Timings: 11AM to 8PM</p>
                 <div className="number">
                   <a href="tel:+919099400699">
-                    <i>
+                    <h6>
                       <FiPhoneCall /> 9173211901
-                    </i>
+                    </h6>
                   </a>
                 </div>
                 <div className="number">
                   <a href="tel:+91 7016525632">
-                    <i>
+                    <h6>
                       <FiPhoneCall /> 7016525632
-                    </i>
+                    </h6>
                   </a>
                 </div>
               </div>
@@ -42,16 +42,16 @@ export default function ContactUsContent() {
                 <p>Office Timings: 11AM to 8PM</p>
                 <div className="number">
                   <a href="tel:+919099400699">
-                    <i>
+                    <h6>
                       <FiPhoneCall /> 9173211901
-                    </i>
+                    </h6>
                   </a>
                 </div>
                 <div className="number">
                   <a href="tel:+919099400699">
-                    <i>
+                    <h6>
                       <FiPhoneCall /> 7016525632
-                    </i>
+                    </h6>
                   </a>
                 </div>
               </div>
@@ -66,16 +66,16 @@ export default function ContactUsContent() {
                 <p>Office Timings: 11AM to 8PM</p>
                 <div className="number">
                   <a href="tel:+919099400699">
-                    <i>
+                    <h6>
                       <FiPhoneCall /> 9173211901
-                    </i>
+                    </h6>
                   </a>
                 </div>
                 <div className="number">
                   <a href="tel:+919099400699">
-                    <i>
+                    <h6>
                       <FiPhoneCall /> 7016525632
-                    </i>
+                    </h6>
                   </a>
                 </div>
               </div>
@@ -90,16 +90,16 @@ export default function ContactUsContent() {
                 <p>Office Timings: 11AM to 8PM</p>
                 <div className="number">
                   <a href="tel:+919099400699">
-                    <i>
+                    <h6>
                       <FiPhoneCall /> 9173211901
-                    </i>
+                    </h6>
                   </a>
                 </div>
                 <div className="number">
                   <a href="tel:+919099400699">
-                    <i>
+                    <h6>
                       <FiPhoneCall /> 7016525632
-                    </i>
+                    </h6>
                   </a>
                 </div>
               </div>

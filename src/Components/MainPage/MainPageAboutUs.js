@@ -39,7 +39,7 @@ export default function MainPageAboutUs() {
                     <BsFillPersonFill /> Expert Tour Guide
                   </h1>
                   <h1>
-                    <FaHandsHelping /> Years of experience
+                    <FaHandsHelping /> Total experience
                   </h1>
                   <h1>
                     <AiOutlineQuestionCircle /> Beautiful Tour Place

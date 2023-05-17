@@ -12,6 +12,25 @@
     --cardBG: #fff;
   }
 
+
+  .contact_information p {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.contact_information h6 {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+
+    &:hover{
+        color: hsl(199, 100%, 33%); 
+    }
+}
+
+
+
   .footer{
     width: 100%;
     position: relative;
@@ -163,6 +182,15 @@
                 }
             }
 
+            button.send_button {
+                background: #10b5cb;
+                border: none;
+                padding: 4px 10px;
+                border-radius: 6px;
+                color: white;
+                font-weight: 500;
+            }
+
             .footerLinks{
                 flex-basis: 50%;
                 width: 100%;
@@ -173,6 +201,7 @@
 
                 .linkGroup{
                     .groupTitle{
+                        font-size: 19px;
                         display: block;
                         font-weight: 600;
                         color: var(--blackColor);
@@ -226,6 +255,15 @@
 //  Media CSS //
 
 @media screen and (min-width: 500px) {
+
+    button.send_button {
+        background: #10b5cb;
+        border: none;
+        padding: 4px 10px;
+        border-radius: 6px;
+        color: white;
+        font-weight: 500;
+    }
     .footer{
         .secContent{
             .footerCard{
@@ -240,7 +278,7 @@
 
 
                     small{
-                        font-size: 14px;
+                        font-size: 18px;
                         color: var(--whiteColor);
                     }
                 }
@@ -252,6 +290,16 @@
 
 
 @media screen and (min-width: 660px) {
+
+
+    button.send_button {
+        background: #10b5cb;
+        border: none;
+        padding: 4px 10px;
+        border-radius: 6px;
+        color: white;
+        font-weight: 500;
+    }
     .footer{
         .secContent{
             .contactDiv{
@@ -295,7 +343,16 @@
                 }
             }
         }
-    }    
+    }  
+    
+    button.send_button {
+        background: #10b5cb;
+        border: none;
+        padding: 4px 10px;
+        border-radius: 6px;
+        color: white;
+        font-weight: 500;
+    }
 }
 
 
@@ -324,13 +381,23 @@
                     }
                 }
 
+                button.send_button {
+                    background: #10b5cb;
+                    border: none;
+                    padding: 4px 10px;
+                    border-radius: 6px;
+                    color: white;
+                    font-weight: 500;
+                }
+
                 .footerLinks{
                     .linkGroup{
                         .footerList{
-                            font-size: 24px;
+                            font-size: 21px;
                             padding: 5px 0;
                             font-weight: 400;
                             font-family: auto;
+                            margin: 10px -22px;
                         }
                     }
                 }
