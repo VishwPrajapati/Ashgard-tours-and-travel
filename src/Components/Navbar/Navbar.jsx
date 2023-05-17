@@ -22,16 +22,20 @@ const Navbar = () => {
 
   return (
     <section className="navBarSection">
-      <header className="header flex"  >
+      <header className="header flex">
         <div className="logoDiv">
           <NavLink to="#" className="logo flex">
             <h1>
-            <Link  to="/" className="icon" > <MdOutlineTravelExplore /> <span className="text-black"> Asgard </span> </Link>
+              <Link to="/" className="icon">
+                {" "}
+                <MdOutlineTravelExplore />{" "}
+                <span className="text-black"> Asgard </span>{" "}
+              </Link>
             </h1>
           </NavLink>
         </div>
 
-        <div className={active} style={{height: "60px"}} >
+        <div className={active} style={{ height: "60px" }}>
           <ul className="navLists flex">
             <li className="navItem">
               <NavLink to="/" className="navLink">
@@ -55,24 +59,24 @@ const Navbar = () => {
               </NavLink>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="/domestic">
+                  <NavLink to="domestic" className="dropdown-item">
                     Domestic Tour
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="international">
+                  <NavLink to="international" className="dropdown-item">
                     International Tour
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="Honeymoon">
-                    Honeymoon Tour
-                  </a>
+                  <NavLink to="Honeymoon" className="dropdown-item">
+                    Honeymoon
+                  </NavLink>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="Wedding">
-                    Wedding Tours
-                  </a>
+                  <NavLink to="Wedding" className="dropdown-item">
+                    Wedding
+                  </NavLink>
                 </li>
               </ul>
             </li>

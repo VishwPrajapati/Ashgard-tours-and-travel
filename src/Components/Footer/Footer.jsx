@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../Footer/Footer.css";
+import { NavLink } from "react-router-dom";
 import video2 from "../../images/ocean.mp4";
 import { FiPhoneCall, FiSend } from "react-icons/fi";
 import { MdOutlineTravelExplore } from "react-icons/md";
@@ -51,9 +52,9 @@ const Footer = () => {
         <div className="footerCard flex">
           <div className="footerIntro flex">
             <div className="logoDiv">
-              <a href="/" className="logo flex">
+              <NavLink to="/" className="logo flex">
                 <MdOutlineTravelExplore className="icon" /> Travel
-              </a>
+              </NavLink>
             </div>
 
             <div data-aos="fade-up" className="footerParagraph">
@@ -71,25 +72,25 @@ const Footer = () => {
               <div className="contact_information">
                 <p>
                   <FiPhoneCall />
-                  <a href="tel:+91 9173211901">
+                  <NavLink to="tel:+91 9173211901">
                     <h6>+91 9173211901</h6>
-                  </a>
+                  </NavLink>
                 </p>
               </div>
               <div className="contact_information">
                 <p>
                   <FiPhoneCall />
-                  <a href="tel:+91 9173211901">
+                  <NavLink to="tel:+91 9173211901">
                     <h6>+91 7016525632</h6>
-                  </a>
+                  </NavLink>
                 </p>
               </div>
               <div className="contact_information">
                 <p>
                   <AiOutlineMail />
-                  <a href="mailto:vishw.frontendarmy@gmail.com">
+                  <NavLink to="mailto:vishw.frontendarmy@gmail.com">
                     <h6>vishw.frontendarmy@gmail.com</h6>
-                  </a>
+                  </NavLink>
                 </p>
               </div>
             </div>
@@ -103,36 +104,36 @@ const Footer = () => {
               className="linkGroup"
             >
               <span className="groupTitle">Our Agency</span>
-              <a href="/">
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Services
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Insurance
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Agency
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Tourism
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   payment
                 </li>
-              </a>
+              </NavLink>
             </div>
 
             {/* Group 2 */}
@@ -142,36 +143,36 @@ const Footer = () => {
               className="linkGroup"
             >
               <span className="groupTitle">Partners</span>
-              <a href="/">
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Bokking
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Rentcars
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Hostelworld
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Trivago
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   TripAdvisior
                 </li>
-              </a>
+              </NavLink>
             </div>
 
             {/* Group 3 */}
@@ -181,36 +182,36 @@ const Footer = () => {
               className="linkGroup"
             >
               <span className="groupTitle">Last Minute</span>
-              <a href="/">
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   London
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   France
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Dubai
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Bali
                 </li>
-              </a>
-              <a href="/">
+              </NavLink>
+              <NavLink to="/">
                 <li className="footerList flex">
                   <FiChevronRight className="icon" />
                   Singapore
                 </li>
-              </a>
+              </NavLink>
             </div>
           </div>
 
