@@ -11,6 +11,7 @@ import DomesticTour from "./Components/Subnavbar/DomesticTour";
 import HoneyMoonTour from "./Components/Subnavbar/HoneyMoonTour";
 import InternationalTour from "./Components/Subnavbar/InternationalTour";
 import WeddingTour from "./Components/Subnavbar/WeddingTour";
+import TrakingPage from "./Components/TrakingDetails/TrakingPage";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Index />} />
+            <Route path="trakingpage" element={<TrakingPage />} />
             <Route path="/packages" element={<BookNow />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/contact" element={<ContactUsPage />} />

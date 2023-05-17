@@ -1,0 +1,227 @@
+.traking_banner::after {
+  content: "";
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  height: 36.624%;
+}
+
+.traking_banner::before {
+  bottom: 0px;
+  content: "";
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(179deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 58.291%;
+  top: 221px;
+}
+
+.traking_banner_text {
+  position: absolute;
+  top: 56%;
+  z-index: 2;
+  color: white;
+}
+
+section.traking_hero_banner {
+  margin-bottom: 70px;
+}
+
+.traking_details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.traking_details_right h1 {
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.rating_details h6 {
+  border-radius: 6px;
+  border: 1px solid hsl(199, 100%, 33%);
+  background: hsl(199, 100%, 33%);
+  width: 100%;
+  font-size: 24px;
+  padding: 4px 3px;
+  color: white;
+  font-weight: 400;
+}
+
+.camp_details {
+  margin-top: 15px;
+  gap: 16px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.traking_rate_details span {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.traking_cost h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.traking_cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.traking_cost h6 {
+  background: #10b5cb;
+  padding: 6px 3px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.traking_details_left {
+  height: 157px;
+  width: 26%;
+  background: white;
+  box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5px 28px;
+}
+
+section.traking_rate {
+  margin-bottom: 50px;
+}
+
+.traking_include {
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.include_icon svg {
+  color: hsl(187, 85%, 43%);
+  font-size: 64px;
+}
+
+.include_icon p {
+  color: grey;
+  font-size: 15px;
+}
+
+.traking_include {
+  gap: 38px;
+  height: 122px;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  padding: 5px 28px;
+  margin-top: 25px;
+}
+
+.all_include {
+  margin-top: 14px;
+}
+
+.traking_highlight {
+  margin-top: 48px;
+}
+
+.traking_highlight {
+  height: 364px;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5px 28px;
+  margin-top: 48px;
+}
+
+.all_highlight h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.highlights_info p {
+  font-size: 14px;
+  text-align: justify;
+  width: 86%;
+}
+
+.highlights_info svg {
+  color: #0073a8;
+  font-size: 17px;
+}
+
+.traling_help {
+  margin-top: 53px;
+}
+
+.header_contact_traling p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.main_form_traking input {
+  margin-bottom: 17px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  width: 100%;
+  height: 39px;
+  padding: 10px;
+  outline: none;
+  color: #505050;
+}
+
+input.message_input {
+  height: 98px;
+}
+
+.form_button button {
+  margin-bottom: 16px;
+  border: 1px solid;
+  border-radius: 9px;
+  border: none;
+  background: #10b5cb;
+  padding: 4px 13px;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.form_button button:hover {
+  background: white;
+  color: #10b5cb;
+}
+
+.traling_help {
+  margin-left: -26px;
+  height: 464px;
+  width: 144%;
+  background: white;
+  box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5px 28px;
+}

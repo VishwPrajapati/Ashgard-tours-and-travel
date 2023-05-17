@@ -6,6 +6,9 @@ import img4 from "../../images/moterbike_tour.jpg";
 import img5 from "../../images/scooba_diving.jpg";
 import img6 from "../../images/skydiving_3.jpg";
 
+import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
+
 const Data = [
   {
     imgsrc: img,
@@ -40,6 +43,7 @@ const Data = [
 ];
 
 export default function ActivityPage() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="activity_section">
@@ -62,7 +66,13 @@ export default function ActivityPage() {
                     </div>
                     <div className="tracking_info">
                       <h1>{data.title}</h1>
-                      <button>{data.button}</button>
+                      <button
+                        onClick={() => {
+                          navigate("/trakingpage");
+                        }}
+                      >
+                        {data.button}
+                      </button>
                     </div>
                   </div>
                 );
