@@ -44,6 +44,7 @@ const Data = [
 ];
 
 export default function HoneyMoonTour() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Home />

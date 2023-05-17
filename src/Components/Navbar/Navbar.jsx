@@ -19,7 +19,7 @@ const Navbar = () => {
   const removeNavbar = () => {
     setActive("navBar");
   };
-
+  window.scrollTo(0, 0);
   return (
     <section className="navBarSection">
       <header className="header flex">

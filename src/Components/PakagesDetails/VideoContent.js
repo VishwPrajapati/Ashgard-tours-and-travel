@@ -1,6 +1,16 @@
 import React from "react";
+import Slider from "react-slick";
 
 export default function VideoContent() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+  };
   return (
     <>
       <section className="video_content">
@@ -10,71 +20,83 @@ export default function VideoContent() {
             <p>Exclusive footage from our camps</p>
           </div>
           <div className="video">
-            <div className="content_video">
-              <div className="main_video">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/IdejM6wCkxA"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
+            <Slider {...settings}>
+              <div className="content_video" >
+                <div className="round-1 round" />
+                <div className="round-2 round" />
+                <div className="main_video">
+                  <iframe
+                    width="100%"
+                    height="250"
+                    src="https://www.youtube.com/embed/IdejM6wCkxA"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
               </div>
-            </div>
-            <div className="content_video">
-              <div className="main_video">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/PGjQviV9uuU"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
+              <div className="content_video">
+                <div className="round-1 round" />
+                <div className="round-2 round" />
+                <div className="main_video">
+                  <iframe
+                    width="100%"
+                    height="250"
+                    src="https://www.youtube.com/embed/PGjQviV9uuU"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
               </div>
-            </div>
-            <div className="content_video">
-              <div className="main_video">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/bJsaR9-h26Y"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
+              <div className="content_video">
+                <div className="round-1 round" />
+                <div className="round-2 round" />
+                <div className="main_video">
+                  <iframe
+                    width="100%"
+                    height="250"
+                    src="https://www.youtube.com/embed/bJsaR9-h26Y"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
               </div>
-            </div>
-            <div className="content_video">
-              <div className="main_video">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/ejgpomz8eUs"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
+              <div className="content_video">
+                <div className="round-1 round" />
+                <div className="round-2 round" />
+                <div className="main_video">
+                  <iframe
+                    width="100%"
+                    height="250"
+                    src="https://www.youtube.com/embed/ejgpomz8eUs"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
               </div>
-            </div>
-            <div className="content_video">
-              <div className="main_video">
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/rgk3o2VX57k"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
+              <div className="content_video">
+                <div className="round-1 round" />
+                <div className="round-2 round" />
+                <div className="main_video">
+                  <iframe
+                    width="100%"
+                    height="250"
+                    src="https://www.youtube.com/embed/rgk3o2VX57k"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
               </div>
-            </div>
+            </Slider>
           </div>
         </div>
       </section>

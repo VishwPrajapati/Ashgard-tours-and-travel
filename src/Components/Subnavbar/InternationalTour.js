@@ -45,6 +45,7 @@ const Data = [
 ];
 
 export default function InternationalTour() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Home />

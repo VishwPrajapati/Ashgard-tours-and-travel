@@ -43,6 +43,7 @@ const Data = [
 ];
 
 export default function WeddingTour() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Home />

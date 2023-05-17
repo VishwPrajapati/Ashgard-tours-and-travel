@@ -8,6 +8,7 @@ import UpdatingPage from "./UpdatingPage";
 import Testimonial from "./Testimonial";
 
 export default function Index() {
+  window.scrollTo(0, 0);
   return (
     <>
       <MainPageBanner />

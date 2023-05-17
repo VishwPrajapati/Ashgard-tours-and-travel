@@ -8,6 +8,7 @@ import PhotosContent from "./PhotosContent";
 import AllCondition from "./AllCondition";
 
 export default function PakageInfo() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Banner />

@@ -15,7 +15,7 @@ import WeddingTour from "./Components/Subnavbar/WeddingTour";
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter >
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Index />} />

@@ -267,11 +267,11 @@ section.booking_info {
   background: red;
 }
 
-.video {
+/* .video {
   gap: 11px;
   display: flex;
   overflow: auto;
-}
+} */
 
 .content_title {
   white-space: nowrap;
@@ -290,11 +290,15 @@ section.booking_info {
 
 .main_video {
   height: 100%;
-  width: 100%;
+  width: 96%;
   border-radius: 0.6rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
+
+/* .main_video iframe {
+  padding-right: 10px;
+} */
 
 section.video_content {
   margin-bottom: 70px;
@@ -325,23 +329,23 @@ section.video_content {
   font-size: 30px;
 }
 
-.journey_pic {
+/* .journey_pic {
   gap: 11px;
   display: flex;
   overflow: auto;
-}
+} */
 
 .main_image {
   height: 100%;
-  width: 100%;
+  width: 95%;
   border-radius: 0.6rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 
 .main_image img {
-  width: 400px;
-  height: 100%;
+  width: 392px !important;
+  height: 251% !important;
 }
 
 .journey_pic::-webkit-scrollbar {
@@ -537,4 +541,7 @@ ul.second_table_booking li {
 
 .reach_city {
   display: flex;
+}
+.slick-slider {
+  margin: 0 -15px !important;
 }
