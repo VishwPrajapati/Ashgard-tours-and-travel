@@ -36,6 +36,9 @@
     font-size: 21px;
     font-weight: 500;
   }
+  .header li.dropdown a:hover {
+    color: #0073a8;
+  }
   .header .Navbar {
     position: absolute;
     background: var(--whiteColorDeam);
@@ -109,6 +112,9 @@
 }
 
 @media screen and (min-width: 769px) {
+  li.dropdown a:hover {
+    color: #0073a8;
+  }
   .closeNavbar svg {
     display: none;
   }
@@ -151,6 +157,10 @@
     padding: 0 0.7rem;
   }
 }
+li.dropdown a:hover {
+  color: #0073a8;
+}
+
 button.navbar_btn {
   border: none;
 }
@@ -172,6 +182,9 @@ li.dropdown a {
 }
 
 @media screen and (min-width: 1240px) {
+  li.dropdown a:hover {
+    color: #0073a8;
+  }
   .header {
     padding: 0px 0px;
   }

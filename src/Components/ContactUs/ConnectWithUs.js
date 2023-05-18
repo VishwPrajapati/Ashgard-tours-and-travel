@@ -43,7 +43,7 @@ const ConnectWithUs = () => {
               <FiPhoneCall />
               <h3>Call</h3>
               <a href="tel:+91 7016525632">
-                <i>7016525632</i>
+                <p>7016525632</p>
               </a>
             </div>
           </div>

@@ -22,7 +22,7 @@
   background: linear-gradient(179deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
   transform: matrix(1, 0, 0, -1, 0, 0);
   height: 58.291%;
-  top: 221px;
+  top: 199px;
 }
 
 .traking_banner_text {
@@ -167,7 +167,7 @@ section.traking_rate {
   overflow: hidden;
   display: flex;
   flex-flow: column nowrap;
-  padding: 5px 28px;
+  padding: 22px 22px;
   margin-top: 48px;
 }
 
@@ -204,7 +204,7 @@ section.traking_rate {
   margin-bottom: 17px;
   border-radius: 6px;
   border: 1px solid #d9d9d9;
-  width: 100%;
+  width: 115%;
   height: 39px;
   padding: 10px;
   outline: none;
@@ -236,13 +236,13 @@ input.message_input {
 .traling_help {
   margin-left: -26px;
   height: auto;
-  width: auto;
+  width: 147%;
   background: white;
   box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
   border-radius: 10px;
   display: flex;
   flex-flow: column nowrap;
-  padding: 5px 28px;
+  padding: 7px 28px;
 }
 
 .main_form_traking textarea {
@@ -290,7 +290,7 @@ input.message_input {
   height: auto;
   box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
   border-radius: 10px;
-  padding: 9px 20px;
+  padding: 21px 20px;
 }
 
 .departures_header p {
@@ -335,11 +335,13 @@ p.note {
   height: max-content;
   box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
   padding: 5px 28px;
-  width: 125%;
+  width: 163%;
   margin: 0px -74px;
+  border-radius: 11px;
 }
 
 .our_qualification {
+  width: 165%;
   margin: 30px 9px 0px -75px;
   height: auto;
   box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
@@ -348,7 +350,7 @@ p.note {
 }
 
 .full_qualification h6 {
-  margin: 22px 0px;
+  margin: 22px 39px;
   font-size: 22px;
   text-align: center;
   font-weight: 600;
@@ -372,5 +374,50 @@ p.note {
 
 .all_condition p {
   text-align: justify;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.all_condition h6 svg {
+  margin-right: 7px;
+}
+
+section.traking_book_now {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background: #f1f1f1;
+  font-size: 0.875rem;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.main_book_now {
+  align-items: center;
+  padding: 16px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right_side_book_now button {
+  border-radius: 6px;
+  background: #0073a8;
+  border: 1px solid #0073a8;
+  padding: 9px 10px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.left_side_book_now {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.right_side_book_now button:hover {
+  color: #0073a8;
+  background: white;
+}
+
+.traking_rate_details p {
+  font-size: 18px;
 }

@@ -46,6 +46,14 @@ export default function AllCondition() {
           />
         );
 
+      case "rent/purchase-gears":
+        return (
+          <CommonButtonModal
+            vishw="rent/purchase-gears"
+            show={show2}
+            handleClose={handleClose2}
+          />
+        );
       case "terms-&-conditions":
         return (
           <CommonButtonModal
@@ -55,30 +63,20 @@ export default function AllCondition() {
           />
         );
 
-      case "cancellation-policy":
-        return (
-          <CommonButtonModal
-            vishw="cancellation-policy"
-            show={show3}
-            handleClose={handleClose3}
-          />
-        );
-
-      case "rent/purchase-gears":
-        return (
-          <CommonButtonModal
-            vishw="rent/purchase-gears"
-            show={show2}
-            handleClose={handleClose2}
-          />
-        );
-
       case "how-to-reach?":
         return (
           <CommonButtonModal
             vishw="how-to-reach?"
             show={show}
             handleClose={handleClose}
+          />
+        );
+      case "cancellation-policy":
+        return (
+          <CommonButtonModal
+            vishw="cancellation-policy"
+            show={show3}
+            handleClose={handleClose3}
           />
         );
 
@@ -130,17 +128,6 @@ export default function AllCondition() {
               <button
                 variant="primary"
                 onClick={() => {
-                  handleShow3();
-                  setCurrentModal("cancellation-policy");
-                }}
-              >
-                Cancellation Policy <AiOutlineArrowRight />
-              </button>
-            </div>
-            <div className="button_condition">
-              <button
-                variant="primary"
-                onClick={() => {
                   handleShow2();
                   setCurrentModal("rent/purchase-gears");
                 }}
@@ -157,6 +144,17 @@ export default function AllCondition() {
                 }}
               >
                 How To Reach? <AiOutlineArrowRight />
+              </button>
+            </div>
+            <div className="button_condition">
+              <button
+                variant="primary"
+                onClick={() => {
+                  handleShow3();
+                  setCurrentModal("cancellation-policy");
+                }}
+              >
+                Cancellation Policy <AiOutlineArrowRight />
               </button>
             </div>
             {renderButtonModal()}

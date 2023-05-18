@@ -41,6 +41,9 @@
             }
         }
 
+        li.dropdown a:hover {
+            color: #0073a8;
+        }
 
         .Navbar{
             position: absolute;
@@ -126,6 +129,10 @@
   @media screen and (min-width: 769px) {
 
 
+    li.dropdown a:hover {
+        color: #0073a8;
+    }
+
     .closeNavbar svg {
         display: none;
     }
@@ -188,6 +195,11 @@
     }
   }
 
+
+  li.dropdown a:hover {
+    color: #0073a8;
+}
+
   button.navbar_btn {
     border: none;
     a {
@@ -211,6 +223,10 @@
 
 
   @media screen and (min-width: 1240px) {
+
+    li.dropdown a:hover {
+        color: #0073a8;
+    }
     .header {
         padding: 0px 0px;
     }

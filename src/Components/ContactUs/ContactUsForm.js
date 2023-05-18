@@ -39,8 +39,8 @@ const ContactUsForm = () => {
             <div className="contact_us_part">
               <div className="contact_us_form">
                 <div className="form_header">
-                  <h1>Get Intouch With Us</h1>
-                  <p>Nullam Dictum Feliseu Pede Mollis Pretium. </p>
+                  <h1>Get In Touch With Us</h1>
+                  <p>Life is either a daring adventure or nothing.</p>
                 </div>
                 <div className="form_main">
                   <div className="form_detail">

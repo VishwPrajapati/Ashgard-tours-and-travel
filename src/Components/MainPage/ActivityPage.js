@@ -68,7 +68,7 @@ export default function ActivityPage() {
                       <h1>{data.title}</h1>
                       <button
                         onClick={() => {
-                          navigate("/trakingpage");
+                          navigate("/EverestTraking");
                         }}
                       >
                         {data.button}
