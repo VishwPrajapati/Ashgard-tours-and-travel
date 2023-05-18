@@ -12,6 +12,9 @@ export default function TrakingBanner() {
             <div className="traking_banner_text">
               <h1>Everest Traking</h1>
             </div>
+            <div className="traking_banner_para">
+              <p>Let's Take Greate experience with us</p>
+            </div>
           </div>
         </div>
       </section>

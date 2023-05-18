@@ -32,6 +32,18 @@
   color: white;
 }
 
+.traking_banner_para {
+  position: absolute;
+  top: 65%;
+  z-index: 2;
+  color: white;
+}
+
+.traking_banner_para p {
+  font-size: 31px;
+  font-weight: 300;
+}
+
 section.traking_hero_banner {
   margin-bottom: 70px;
 }
@@ -45,12 +57,13 @@ section.traking_hero_banner {
 .traking_details_right h1 {
   font-weight: 700;
   font-size: 27px;
+  color: hsl(199, 100%, 33%);
 }
 
 .rating_details h6 {
   border-radius: 6px;
-  border: 1px solid hsl(199, 100%, 33%);
-  background: hsl(199, 100%, 33%);
+  border: 1px solid #10b5cb;
+  background: #10b5cb;
   width: 100%;
   font-size: 24px;
   padding: 4px 3px;
@@ -72,6 +85,7 @@ section.traking_hero_banner {
 }
 
 .traking_cost h3 {
+  color: hsl(199, 100%, 33%);
   font-size: 26px;
   font-weight: 600;
 }
@@ -83,6 +97,7 @@ section.traking_hero_banner {
 }
 
 .traking_cost h6 {
+  border-radius: 6px;
   background: #10b5cb;
   padding: 6px 3px;
   font-size: 20px;
@@ -157,9 +172,12 @@ section.traking_rate {
 }
 
 .all_highlight h4 {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 600;
+  border-left: 4px solid #10b5cb;
+  padding: 0 0 0 12px;
+  font-size: 1rem;
   margin-bottom: 20px;
+  color: #0073a8;
 }
 
 .highlights_info p {
@@ -210,18 +228,149 @@ input.message_input {
 }
 
 .form_button button:hover {
+  border: 1px solid;
   background: white;
   color: #10b5cb;
 }
 
 .traling_help {
   margin-left: -26px;
-  height: 464px;
-  width: 144%;
+  height: auto;
+  width: auto;
   background: white;
   box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
   border-radius: 10px;
   display: flex;
   flex-flow: column nowrap;
   padding: 5px 28px;
+}
+
+.main_form_traking textarea {
+  margin-bottom: 17px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  width: 100%;
+  padding: 10px;
+  color: #505050;
+}
+
+.main_time_div h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(199, 100%, 33%);
+  border-left: 4px solid #10b5cb;
+  padding: 0 0 0 12px;
+}
+
+.duration_all_para strong p {
+  color: #10b5cb;
+  padding: 0 0 0 12px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.duration_info {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding: 26px 10px;
+}
+
+.duration_all_info {
+  width: 60%;
+}
+
+.duration_all_para p {
+  padding: 0px 10px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.duration_all_para {
+  height: auto;
+  box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
+  border-radius: 10px;
+  padding: 9px 20px;
+}
+
+.departures_header p {
+  padding: 0 0 0 12px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #10b5cb;
+}
+
+p.note {
+  font-size: 12px;
+  font-weight: 600;
+  color: grey;
+}
+
+.duration_info_right {
+  width: 20%;
+}
+
+.duration_question_para h6 {
+  font-size: 17px;
+  text-align: center;
+}
+
+.duration_question_para p {
+  font-size: 13px;
+  text-align: justify;
+}
+
+.duration_para_number p a {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.duration_question_para p a svg {
+  color: #0073a8;
+  margin-right: 16px;
+  font-size: 22px;
+}
+
+.duration_question_para {
+  height: max-content;
+  box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
+  padding: 5px 28px;
+  width: 125%;
+  margin: 0px -74px;
+}
+
+.our_qualification {
+  margin: 30px 9px 0px -75px;
+  height: auto;
+  box-shadow: 0px 0px 20px 5px rgba(198, 198, 198, 0.25);
+  border-radius: 10px;
+  padding: 9px 20px;
+}
+
+.full_qualification h6 {
+  margin: 22px 0px;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  background: #10b5cb;
+  width: 79%;
+  padding: 11px 0px;
+  color: white;
+  font-weight: 500;
+}
+
+.all_condition h6 svg {
+  font-size: 26px;
+  color: #10b5cb;
+}
+
+.all_condition h6 {
+  text-align: justify;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.all_condition p {
+  text-align: justify;
+  font-size: 12px;
 }
