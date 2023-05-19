@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { data } from "../../Data";
 
 export default function VideoContent() {
   const thunder = {
@@ -17,14 +18,12 @@ export default function VideoContent() {
       <section className="video_content">
         <div className="container">
           <div className="content_title">
-            <h1>Videos</h1>
-            <p>Exclusive footage from our camps</p>
+            <h1>{data.content_title.title}</h1>
+            <p>{data.content_title_para.title}</p>
           </div>
           <div className="video">
             <Slider className="video_button" {...thunder}>
               <div className="content_video">
-                {/* <div className="round-1 round" />
-                <div className="round-2 round" /> */}
                 <div className="main_video">
                   <iframe
                     width="100%"
@@ -38,8 +37,6 @@ export default function VideoContent() {
                 </div>
               </div>
               <div className="content_video">
-                {/* <div className="round-1 round" />
-                <div className="round-2 round" /> */}
                 <div className="main_video">
                   <iframe
                     width="100%"
@@ -53,8 +50,6 @@ export default function VideoContent() {
                 </div>
               </div>
               <div className="content_video">
-                {/* <div className="round-1 round" />
-                <div className="round-2 round" /> */}
                 <div className="main_video">
                   <iframe
                     width="100%"
@@ -68,8 +63,6 @@ export default function VideoContent() {
                 </div>
               </div>
               <div className="content_video">
-                {/* <div className="round-1 round" />
-                <div className="round-2 round" /> */}
                 <div className="main_video">
                   <iframe
                     width="100%"
@@ -83,8 +76,6 @@ export default function VideoContent() {
                 </div>
               </div>
               <div className="content_video">
-                {/* <div className="round-1 round" />
-                <div className="round-2 round" /> */}
                 <div className="main_video">
                   <iframe
                     width="100%"

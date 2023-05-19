@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { data } from "../../Data";
 
 const ContactUsForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -39,8 +40,8 @@ const ContactUsForm = () => {
             <div className="contact_us_part">
               <div className="contact_us_form">
                 <div className="form_header">
-                  <h1>Get In Touch With Us</h1>
-                  <p>Life is either a daring adventure or nothing.</p>
+                  <h1>{data.form_header.title}</h1>
+                  <p>{data.form_header_para.title}</p>
                 </div>
                 <div className="form_main">
                   <div className="form_detail">

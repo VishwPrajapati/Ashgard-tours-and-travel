@@ -9,6 +9,7 @@ import { AiFillYoutube } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTripadvisor } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
+import { data } from "../../Data";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -27,8 +28,8 @@ const Footer = () => {
       <div className="secContent container">
         <div className="contactDiv flex">
           <div data-aos="fade-up" className="text">
-            <small>Keep Touch</small>
-            <h2>Travel with us</h2>
+            <small>{data.contactDiv.title}</small>
+            <h2>{data.contactDiv_header.title}</h2>
           </div>
 
           <div className="inputDiv flex">
@@ -58,8 +59,7 @@ const Footer = () => {
             </div>
 
             <div data-aos="fade-up" className="footerParagraph">
-              This is Travel Agency Name is Ashgard and you can travel any
-              places after register
+              {data.footerParagraph.title}
             </div>
 
             <div data-aos="fade-up" className="footerSocials flex">
@@ -216,8 +216,8 @@ const Footer = () => {
           </div>
 
           <div className="footerDiv flex">
-            <small>Best Travel Website Theme</small>
-            <small>Copy Rights Reserved - sence 2002</small>
+            <small>{data.footerDiv1.title}</small>
+            <small>{data.footerDiv2.title}</small>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../../src/images/dubai_night_bg.jpg";
+import {data } from "../../Data";
 
 export default function Banner() {
   return (
@@ -10,7 +11,7 @@ export default function Banner() {
           <div className="banner_text">
             <div className="main_text">
               <div className="right_text">
-                <h1>Dubai Holiday</h1>
+                <h1>{data.right_text.title}</h1>
               </div>
             </div>
           </div>

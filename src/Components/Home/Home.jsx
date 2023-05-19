@@ -11,6 +11,7 @@ import { TbApps } from "react-icons/tb";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { data } from "../../Data";
 
 const Home = () => {
   // Lets create a react hook to add a scroll animation....//
@@ -27,28 +28,30 @@ const Home = () => {
       <div className="homeContent container">
         <div className="textDiv">
           <span data-aos="fade-up" className="smallText">
-            Our Packages
+            {data.smallText.title}
           </span>
-          <h1 data-aos="fade-up" className="homeTitle">Search Your Holiday</h1>
+          <h1 data-aos="fade-up" className="homeTitle">
+            {data.homeTitle.title}
+          </h1>
         </div>
         <div data-aos="fade-up" className="cardDiv grid">
           <div className="destinationInput">
-            <lable htmlFor="city">Search Your Destination</lable>
+            <lable htmlFor="city">{data.destinationInput.title}</lable>
             <div className="input flex">
               <input type="text" placeholder="Enter Name Here..." />
               <GrLocation className="icon" />
             </div>
           </div>
           <div className="dateInput">
-            <lable htmlFor="date">Select your date:</lable>
+            <lable htmlFor="date">{data.dateInput.title}:</lable>
             <div className="input flex">
               <input type="date" placeholder="Enter Name Here..." />
             </div>
           </div>
           <div className="princeInput">
             <div className="label_total flex">
-              <lable htmlFor="price">Max price:</lable>
-              <h3 className="total">5000$</h3>
+              <lable htmlFor="price">{data.label_total.title}</lable>
+              <h3 className="total">{data.total.title}</h3>
             </div>
             <div className="input flex">
               <input type="range" max="5000" min="1000" />
@@ -57,7 +60,7 @@ const Home = () => {
 
           <div className="searchOptions flex">
             <HiFilter className="icon" />
-            <span>More Filters</span>
+            <span>{data.searchOptions.title}</span>
           </div>
         </div>
 

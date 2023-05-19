@@ -1,4 +1,5 @@
 import React from "react";
+import { data } from "../../Data";
 
 export default function TrakingBook() {
   return (
@@ -6,9 +7,11 @@ export default function TrakingBook() {
       <section className="traking_book_now">
         <div className="container">
           <div className="main_book_now">
-            <div className="left_side_book_now">From ₹39,950/ person</div>
+            <div className="left_side_book_now">
+              {data.left_side_book_now.title}
+            </div>
             <div className="right_side_book_now">
-              <button>Book Now</button>
+              <button>{data.right_side_book_now.title}</button>
             </div>
           </div>
         </div>

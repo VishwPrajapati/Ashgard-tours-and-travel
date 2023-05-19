@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../../src/images/contact-us-banner-02.jpg";
+import { data } from "../../Data";
 
 export default function ContactUsBanner() {
   return (
@@ -11,8 +12,8 @@ export default function ContactUsBanner() {
             <div className="contact_us_banner_text">
               <div className="contact_us_main_title">
                 <div className="contact_us_title">
-                  <h1>Contact Us</h1>
-                  <p>Life is either a daring adventure or nothing.</p>
+                  <h1>{data.contact_us_title.title}</h1>
+                  <p>{data.contact_us_para.title}</p>
                 </div>
               </div>
             </div>

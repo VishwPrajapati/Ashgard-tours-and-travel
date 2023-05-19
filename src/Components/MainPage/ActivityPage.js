@@ -5,6 +5,7 @@ import img3 from "../../images/paraglinding.jpg";
 import img4 from "../../images/moterbike_tour.jpg";
 import img5 from "../../images/scooba_diving.jpg";
 import img6 from "../../images/skydiving_3.jpg";
+import { data } from "../../Data";
 
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
@@ -49,11 +50,9 @@ export default function ActivityPage() {
       <section className="activity_section">
         <div className="container">
           <div className="title_activity">
-            <h1>Activities</h1>
+            <h1>{data.title_activity.title}</h1>
             <p>
-              The magic of white water rafting, the adrenaline pumping with the
-              thrill of negotiating a rapid or just gently floating past
-              terraced hillsides and forest.
+              {data.title_activity_para.title}
             </p>
           </div>
           <div className="all_activity">

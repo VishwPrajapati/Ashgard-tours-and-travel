@@ -6,6 +6,7 @@ import { MdOutlineSecurity } from "react-icons/md";
 import { BiGroup, BiTimeFive } from "react-icons/bi";
 import { AiOutlineHeart } from "react-icons/ai";
 import img from "../../images/wedding-tour.jpg";
+import { data } from "../../Data";
 
 export default function SpecialPage() {
   return (
@@ -15,37 +16,19 @@ export default function SpecialPage() {
           <div className="all_special_offer">
             <div className="special_offer">
               <div className="left_side_offer">
-                <h1>Special Tour Packages</h1>
-                <p>
-                  India, the land of cultural diversities offers a life full of
-                  colors. The land is filled with the colors of various cultures
-                  spread across the land. The country has come up fast as the
-                  favored tourist destination among the travelers of the world.
-                  The beauty of the place is impeccable and dotted with probably
-                  most of the wonders of the nature. One can find the lofty
-                  mountains, misty skies along with the vastness of sea with the
-                  perennial and seasonal rivers to support them. The diversified
-                  cultures also form the colorful side of the land.
-                </p>
+                <h1>{data.left_side_offer.title}</h1>
+                <p>{data.left_side_offer_para.title}</p>
                 <div className="tours_details tour_width">
                   <div className="all_details">
                     <div className="left_details">
                       <h1>
-                        <BiGroup /> Wedding Tours
+                        <BiGroup /> {data.left_details.title}
                       </h1>
-                      <p>
-                        Wedding Packages are arranged to provide an insight into
-                        the lifestyle of the Indian and the best of the
-                        weddings.
-                      </p>
+                      <p>{data.left_details_para.title}</p>
                       <h1>
-                        <AiOutlineHeart /> Honeymoon Tour
+                        <AiOutlineHeart /> {data.left_details1.title}
                       </h1>
-                      <p>
-                        Get deals on Hotel Booking – Book budget hotels, cheap
-                        hotels, 5 star hotels in special honeymoon and best
-                        destination in India.
-                      </p>
+                      <p>{data.left_details_para1.title}</p>
                     </div>
                     <div className="img_tour">
                       <img src={img} alt="honeymoon" />
@@ -56,23 +39,24 @@ export default function SpecialPage() {
               <div className="right_side_offer">
                 <div className="safety">
                   <div className="intrcution">
-                    <h1>Guideline For Safety</h1>
+                    <h1>{data.intrcution.title}</h1>
                   </div>
                   <div className="icon_safety">
                     <p>
-                      <BsTerminalFill /> Terms & Conditions
+                      <BsTerminalFill /> {data.icon_safety1.title}
                     </p>
                     <p>
-                      <RiGitRepositoryPrivateLine /> Privacy Policy
+                      <RiGitRepositoryPrivateLine /> {data.icon_safety2.title}
                     </p>
                     <p>
-                      <HiReceiptRefund /> Refund Policy / Cancellation Policy
+                      <HiReceiptRefund /> {data.icon_safety3.title}
                     </p>
                     <p>
-                      <MdOutlineSecurity /> Safety & Security
+                      <MdOutlineSecurity />
+                      {data.icon_safety4.title}
                     </p>
                     <p>
-                      <BiTimeFive /> 24*7 Support / Quick Booking
+                      <BiTimeFive /> {data.icon_safety5.title}
                     </p>
                   </div>
                 </div>

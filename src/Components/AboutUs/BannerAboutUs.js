@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../../src/images/about-us-banner-image-02.jpg";
+import { data } from "../../Data";
 
 export default function BannerAboutUs() {
   return (
@@ -10,8 +11,8 @@ export default function BannerAboutUs() {
           <div className="container">
             <div className="about_us_banner_text">
               <div className="about_us_title">
-                <h1>About Us </h1>
-                <p>Who we are & where do we stand</p>
+                <h1>{data.About_us_banner_title.title} </h1>
+                <p> {data.About_us_banner_Para.title} </p>
               </div>
             </div>
           </div>

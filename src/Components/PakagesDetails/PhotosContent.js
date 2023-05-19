@@ -6,7 +6,7 @@ import img4 from "../../../src/images/photo-activity-4.jpg";
 import img5 from "../../../src/images/photo-activity-5.jpg";
 import img6 from "../../../src/images/photo-activity-6.jpg";
 import img7 from "../../../src/images/photo-activity-7.jpg";
-
+import { data } from "../../Data";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -27,8 +27,8 @@ export default function PhotosContent() {
       <section className="section_image_content">
         <div className="container">
           <div className="image_content_title">
-            <h1>Image</h1>
-            <p>Tours Journey Click</p>
+            <h1>{data.image_content_title.title}</h1>
+            <p>{data.image_content_para.title}</p>
           </div>
           <div className="journey_pic">
             <Slider className="photos_button" {...settings}>

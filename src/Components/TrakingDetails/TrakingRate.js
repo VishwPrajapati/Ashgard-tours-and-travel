@@ -4,6 +4,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaHotel } from "react-icons/fa";
 import { RiFocus2Line } from "react-icons/ri";
 import { AiFillCar, AiOutlineSafetyCertificate } from "react-icons/ai";
+import { data } from "../../Data";
 
 export default function TrakingRate() {
   return (
@@ -11,22 +12,22 @@ export default function TrakingRate() {
       <div className="container">
         <div className="traking_details">
           <div className="traking_details_right">
-            <h1>Everest Base Camp Trek, Nepal</h1>
+            <h1>{data.traking_details_right.title}</h1>
             <div className="camp_details">
               <div className="rating_details">
-                <h6>4.5/5</h6>
+                <h6>{data.rating_details1.title}</h6>
               </div>
               <div className="rating_reviews">
-                <p> (24 Reviews)</p>
+                <p>{data.rating_reviews.title}</p>
               </div>
               <div className="rating_days">
                 <p>
-                  <BsStopwatch /> 12D/11N
+                  <BsStopwatch /> {data.rating_days.title}
                 </p>
               </div>
               <div className="rating_location">
                 <p>
-                  <CiLocationOn /> Kathmandu
+                  <CiLocationOn /> {data.rating_location.title}
                 </p>
               </div>
             </div>
@@ -34,55 +35,50 @@ export default function TrakingRate() {
               <div className="all_include">
                 <div className="include_icon">
                   <AiFillCar />
-                  <p>Transport Included</p>
+                  <p>{data.include_icon1.title}</p>
                 </div>
               </div>
               <div className="all_include">
                 <div className="include_icon">
                   <BsFillPersonFill />
-                  <p>Guide</p>
+                  <p>{data.include_icon2.title}</p>
                 </div>
               </div>
               <div className="all_include">
                 <div className="include_icon">
                   <AiOutlineSafetyCertificate />
-                  <p>Thrillophilia Safe</p>
+                  <p>{data.include_icon3.title}</p>
                 </div>
               </div>
               <div className="all_include">
                 <div className="include_icon">
                   <FaHotel />
-                  <p>Stay Included</p>
+                  <p>{data.include_icon4.title}</p>
                 </div>
               </div>
             </div>
             <div className="traking_highlight">
               <div className="all_highlight">
-                <h4>Everest Base Camp Trek Highlights</h4>
+                <h4>{data.all_highlight.title}</h4>
               </div>
               <div className="highlights_info">
                 <p>
-                  <RiFocus2Line /> Walk on the footprints of Sir Edmund Hillary
-                  to conquer the Highest Mountain on Earth
+                  <RiFocus2Line /> {data.highlights_info1.title}
                 </p>
                 <p>
-                  <RiFocus2Line /> Stand tall at the Kala Patthar to witness the
-                  closest panoramic views of Mt. Everest
-                </p>
-                <p>
-                  <RiFocus2Line />
-                  Get a thrilling experience of flying in the World's most
-                  adventurous flight and shortest runway
+                  <RiFocus2Line /> {data.highlights_info2.title}
                 </p>
                 <p>
                   <RiFocus2Line />
-                  Visit World's Highest Monastery Tengboche, known to be the
-                  Spiritual Centre of Kumbhu Valley
+                  {data.highlights_info3.title}
                 </p>
                 <p>
                   <RiFocus2Line />
-                  Ensure a smooth experience with all paperwork and trekking
-                  permits already arranged
+                  {data.highlights_info4.title}
+                </p>
+                <p>
+                  <RiFocus2Line />
+                  {data.highlights_info5.title}
                 </p>
               </div>
             </div>
@@ -90,19 +86,20 @@ export default function TrakingRate() {
           <div className="traking_details_left">
             <div className="traking_rate_details">
               <p>
-                Starting from<span> INR 80,999 </span>
+                {data.traking_rate_details.title}
+                <span> {data.traking_rate_details_span.title} </span>
               </p>
             </div>
             <div className="traking_cost">
-              <h3>INR 39,950</h3>
-              <h6>50% Off</h6>
+              <h3>{data.traking_cost.title}</h3>
+              <h6>{data.traking_cost_discount.title}</h6>
             </div>
             <div className="per_person">
-              <p>per Adult</p>
+              <p>{data.per_person.title}</p>
             </div>
             <div className="traling_help">
               <div className="header_contact_traling">
-                <p>Everest Base Camp Trek, Nepal: Get 51% off!</p>
+                <p>{data.header_contact_traling.title}</p>
               </div>
               <div className="main_form_traking">
                 <label>
@@ -158,7 +155,7 @@ export default function TrakingRate() {
                 ></textarea>
               </div>
               <div className="form_button">
-                <button>Send Enquiry</button>
+                <button>{data.form_button.title}</button>
               </div>
             </div>
           </div>
